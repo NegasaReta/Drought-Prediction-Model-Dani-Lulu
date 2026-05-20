@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "model_type": "weighted_threshold",
+  "parameters": {
+    "temperature": { "weight": 0.15, "optimal_range": [15, 25], "impact": "positive" },
+    "rainfall": { "weight": -0.25, "optimal_range": [100, 500], "impact": "negative" },
+    "humidity": { "weight": -0.15, "optimal_range": [50, 70], "impact": "negative" },
+    "soil_moisture": { "weight": -0.20, "optimal_range": [30, 60], "impact": "negative" },
+    "wind_speed": { "weight": 0.05, "optimal_range": [0, 15], "impact": "positive" },
+    "vegetation_index": { "weight": -0.10, "optimal_range": [0.6, 1.0], "impact": "negative" },
+    "evapotranspiration": { "weight": 0.10, "optimal_range": [0, 5], "impact": "positive" }
+  },
+  "thresholds": {
+    "low": 0.3,
+    "moderate": 0.5,
+    "severe": 0.75
+  }
+}
